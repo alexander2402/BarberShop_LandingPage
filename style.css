@@ -1,0 +1,372 @@
+*{
+/*     border: 1px solid red; */
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+/* @font-face {
+    font-family: "ChunkFiveRegular";
+src: url('fonts/chunkfive.eot');
+}
+h1, h2, p {
+    font-family: ChunkFiveRegular;
+} */
+body {
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top center;
+    background-color: black;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  
+}
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.header-page {
+    margin-bottom: 70px;
+
+}
+.site-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.heder-page__logo {
+    margin: 0 auto;
+    order: 2;
+}
+.site-nav__wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    background: black;
+}
+.site-nav__wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-nav__list  {
+    display: flex;
+    flex:1 86%;
+}
+
+.enterence-list {
+    display: flex;
+    flex: 1 13%;
+}
+
+.list__item {
+    display: flex;
+}
+.list__item a {
+    
+    padding: 20px 25px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+
+.site-list__item a:hover,
+.site-list__item a:focus,
+.user-list a:hover,
+.user-list a:focus {
+  background-color: #242424;
+}
+
+.enterence-list .login-link {
+    display: block;
+    width: 100%;
+    background-image: url(img/header-login.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-position: 20% 50%;
+    
+}
+
+
+/****************MAIN benefits***********************/
+.benefits {
+    margin-bottom: 84px;
+}
+.beanefits__list {
+    display: flex;
+    justify-content: space-between;
+}
+.beanefits__item {
+     flex: 1 30%
+}
+.beanefits__item-margin {
+    margin: 0 2% 0 2%;
+}
+.beanefits__caption {
+    position: relative;
+    padding-bottom: 72px;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+.beanefits__caption::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: white;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 27%;
+    left: 45%;
+}
+.beanefits__desc {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/****************MAIN news-gallery***********************/
+/****************MAIN giniral news-gallery***********************/
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    color: black;
+    padding: 55px 80px;
+}
+
+.news-gallery__wrapper {
+    margin-bottom: 35px;
+}
+
+.caption {
+    font-size: 30px;
+    font-weight: 42px;
+    padding-bottom: 32px;
+}
+.text {
+    font-size: 14px; 
+    line-height: 24px;
+    font-weight: bold;
+}
+.button {
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/****************MAIN news***********************/
+.news {
+    display: flex;
+    flex-direction: column;
+    width: 360px; 
+}
+
+.news__item{
+    padding-bottom: 23px;
+}
+
+
+.verticale-line {
+    position: relative;
+}
+.verticale-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -85px;
+    margin: 0 auto;
+    background-image: url(img/line.png);
+    background-position: 26% 30%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 100%;
+}
+
+/****************MAIN gallery***********************/
+.gallery {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.gallery__caption {
+    padding-left: 8px;
+}
+
+.gallery img {
+    margin-bottom: 46px;
+    padding: 0 8px 0 8px;
+}
+.button-wrapper {
+    display: flex;
+}
+.button__gallery {
+    width: 145px;
+    font-size: 14px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button__gallery--forward {
+    margin-left: 11px;
+    border: none;
+}
+
+/****************MAIN contact-checking-form**********************/
+.contact-checking-form__wrapper {
+    margin-bottom: 64px;
+}
+.contact-info {
+    width: 360px;
+}
+
+
+.contact-info__phone {
+    margin-bottom: 34px;
+}
+
+.button-left {
+    margin-right: 20px;
+    border: none;
+}
+.contact-info__work-time {
+    margin-bottom: 37px;
+}
+/****************MAIN checking-form**********************/
+.checking-section {
+    width: 300px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.checking-sectio__text {
+    margin-bottom: 18px;
+}
+.checking {
+    display: flex;
+    flex-direction: column;
+}
+.checking-phone {
+    margin-bottom: 10px;
+}
+
+.checking-text {
+padding-left: 14px;
+padding-bottom: 13px;
+}
+
+form input {
+    width: 124px;
+    padding: 15px 0 10px 10px;
+    margin-bottom: 12px;
+    border: 1px solid black;
+}
+.form-button {
+    padding: 10px 122px;
+    border: none;
+}
+
+
+/****************FOOTER **********************/
+.footer-wrapper {
+    width: 100%;
+    background-color: #252525;
+    background-image: url(img/footer-line.png);
+}
+.footer-containeer {
+    display: flex;
+    justify-content: space-between;
+    padding: 61px 0 45px 0;
+}
+.footer-contacts__shopname {
+    text-decoration: underline;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 90px;
+    width: 170px;
+}
+.footer-social b {
+    text-align: center;
+    padding-bottom: 14px;
+}
+.social__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+.social__item {
+    display: flex;
+    justify-content: space-between;
+    width: 44px;
+    height: 44px;
+}
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.copyright__text {
+    padding-bottom: 14px;
+}
+.social__link--vkontakte  {
+
+    background-image: url(img/vk.png);
+
+}
+.social__link--facebook {
+
+    background-image: url(img/facebook.png);
+ 
+}
+.social__link--instagram {
+ 
+    background-image: url(img/instagram.png);
+
+}
+.social__link {
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+
